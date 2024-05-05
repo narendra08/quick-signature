@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signature</title>
-    <style>
+    <!-- <style>
         .main{
             top: 50%;
             left: 50%;
@@ -40,7 +40,38 @@
             margin: 10px auto;
             width: 50%;
         }
-    </style>
+    </style> -->
+    <style>
+        .main {
+          position: relative;
+          margin: 0 auto;
+          max-width: 800px;
+          padding: 0 20px;
+        }
+        .top, .bottom {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+        }
+        .top .block, .bottom .block {
+          margin-bottom: 10px;
+        }
+        .canvas {
+          width: 100%;
+          border: 1px solid black;
+        }
+        .block, input, button, select {
+          width: 100%;
+        }
+        .block p {
+          margin: 10px auto;
+          width: auto;
+        }
+        .bottom{
+            gap: 10px;
+            margin-top: 20px;
+        }
+      </style>
         <link rel="icon" href="favicon.png">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
